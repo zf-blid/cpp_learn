@@ -1,0 +1,25 @@
+#IDEA相关
+.idea
+*.iws
+*.ipr
+out/
+target/
+#IDEA缓存、索引
+.idea/caches/
+.idea/modules/
+.idea/shelf/
+
+#系统缓存/文档临时文件
+.DS_Store
+Thumbs.db
+# 编译器临时文件
+*~
+*.swp
+*.swo
+# 文档导出缓存（如果有pdf、临时office文件按需加）
+*.tmp
+*.bak
+
+.vscode/
+.vscode/*
+.vscode/settings.json
