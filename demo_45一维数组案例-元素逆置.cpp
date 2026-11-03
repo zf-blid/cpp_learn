@@ -10,7 +10,7 @@ int main()
     cout<<"数组逆置前："<<endl;
     for(int i = 0 ; i< 5;i++)
     {
-        cout<<arr[i]<<endl;
+        cout<<arr[i]<<" ";//endl;
     }
 
     //2、实现逆置
@@ -34,10 +34,10 @@ int main()
         start++;
         end--;
     }
-    cout<<"逆置后的数组："<<endl;
+    cout<<endl<<"逆置后的数组：";//<<endl;
     for(int i = 0 ; i< 5;i++)
     {
-        cout<<arr[i]<<endl;
+        cout<<arr[i]<<" "<<endl;
     }
     return 0;
 }
