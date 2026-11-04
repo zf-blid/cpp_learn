@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    //1、创建一个二维数组，三行三列
+
+    int scores[3][3]=
+    {
+        {100,100,100},{90,50,100},{60,70,80}
+    };
+    string name[3]={{"张三"},{"李四"},{"王五"}};
+
+    //2、统计考试成绩，让每行的3列相加，统计出总和
+    for(int i=0;i<3;i++)
+    {
+        int sum=0;//统计分数总和变量
+        for(int j=0;j<3;j++)
+        {
+            sum+=scores[i][j];
+            // cout<<scores[i][j]<<" ";
+        }
+        cout<<"第"<<i+1<<"个人"<<name[i]<<"的总分为："<<sum<<endl;
+        //cout<<endl;
+    }
+}
