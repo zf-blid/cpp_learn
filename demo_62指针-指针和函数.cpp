@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void swap01(int a,int b)
+void swap01(int a,int b)//值转递
 {
     int temp=a;
     a=b;
@@ -10,7 +10,7 @@ void swap01(int a,int b)
     cout<<"swap01 b="<<b<<endl;
 }
 
-void swap02(int* p1,int* p2)
+void swap02(int* p1,int* p2)//地址传递
 {
     int temp=*p1;
     *p1=*p2;
@@ -26,8 +26,6 @@ int main()
     //swap01(a,b);
 
    
-    
-
     //2、地址传递---用于解决形参和实参不同步的问题
     swap02(&a,&b);
         cout<<"a="<<a<<endl;
